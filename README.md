@@ -73,9 +73,10 @@ Whether you're seeking design ideas or ready to furnish your space, Sabe Casa of
 
 #### Backend
 
--Java 17+
--Gradle
--MongoDB
+- Java 17+
+- Gradle
+- MongoDB
+- Stripe account & authentication keys
 
 ### Installation
 
