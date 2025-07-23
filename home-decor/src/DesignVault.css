@@ -1,0 +1,100 @@
+
+.design-vault {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.design-vault-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.design-vault-header h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", sans-serif;
+    color:#1e2912;
+    font-size: 2rem;
+}
+
+.design-vault-header p {
+    font-size: 1.2rem;
+    color: 	#71724f;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tab-button {
+    color: #1e2912;
+    background-color: cornflowerblue;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.tab-button:hover {
+    color: white;
+    background-color: #3475ea;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.room-type-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.room-type-filters button {
+    background-color: #52d5bc;
+    color: #1e2912;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.room-type-filters button:hover {
+    background-color: #1a9880;
+    color: white;
+}
+
+/* Style Filters */
+.style-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.style-filters button {
+    background-color: #354b46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.style-filters button:hover {
+    background-color: #12493a;
+}
+
+
+

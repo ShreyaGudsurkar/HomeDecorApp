@@ -1,0 +1,17 @@
+.cta-link{
+    text-decoration: none;
+    background-color: #52d5bc;
+    color: #1e2912;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cta-link:hover {
+    background-color: #23987e;
+}

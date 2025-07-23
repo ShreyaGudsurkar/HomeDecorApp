@@ -1,0 +1,142 @@
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.store-title{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family: "Playfair Display", sans-serif;
+    color: #1e2912;
+    text-align: center;
+
+}
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card .original {
+    text-decoration: line-through;
+    color: #71724f;
+    margin-left: 0.5rem;
+}
+.card .price {
+    font-weight: bold;
+}
+.card .description, .card .warranty, .card .emi, .card .shipping {
+    font-size: 0.9rem;
+    color: #71724f;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.store-cards {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 0.75rem 0 0.5rem;
+    font-size: 1rem;
+    color: #5a5a04;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.card p {
+    color: #3f5618;
+
+}
+
+.filter-bar{
+    padding: 5px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.filter-bar select{
+    padding: 0.35rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid teal;
+}
+.price-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.price-section .discounted {
+    font-weight: bold;
+    font-size: 1.35rem;
+    color: #3f5618;
+}
+
+.wishlist-icon {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.wishlist-icon-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-width: thin;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.2);
+}
+.wishlist-icon.disabled{
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.buy-now-button {
+    background-color: #0a5558;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 450;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.buy-now-button:hover {
+    background-color: #063739;
+}
+
+.buy-now-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background-color: #ccc;
+    color: #666;
+}

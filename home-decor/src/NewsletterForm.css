@@ -1,0 +1,201 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.newsletter-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 450px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+    z-index: 1000;
+    text-align: left;
+}
+
+.newsletter-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsletter-form p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-elements {
+    margin-bottom: 20px;
+}
+
+.form-elements label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-elements input[type="text"],
+.form-elements input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.form-elements input[type="text"].error,
+.form-elements input[type="email"].error {
+    border-color: #f44336;
+}
+
+.feedback-message {
+    font-size: 14px;
+    color: #f44336;
+    margin-top: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.submit-button,
+.cancel-button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button {
+    background-color: #8DA9C4;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #5E738D;
+    box-shadow: 0 6px 10px rgba(94, 115, 141, 0.6);
+}
+
+.cancel-button {
+    background-color: #E63946;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #A62F36;
+    box-shadow: 0 6px 10px rgba(166, 47, 54, 0.6);
+}
+
+.thank-you-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.thank-you-modal h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.thank-you-modal p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.ok-button {
+    padding: 10px 20px;
+    background-color: #8DA9C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ok-button:hover {
+    background-color: #5E738D;
+    box-shadow: 0 6px 10px rgba(94, 115, 141, 0.6);
+}
+
+/* Responsive styles for form */
+@media (max-width: 48rem) {
+    .newsletter-form {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .newsletter-form h2 {
+        font-size: 20px;
+    }
+
+    .newsletter-form p {
+        font-size: 14px;
+    }
+
+    .form-elements label {
+        font-size: 14px;
+    }
+
+    .form-elements input[type="text"],
+    .form-elements input[type="email"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-button,
+    .cancel-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .thank-you-modal {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .thank-you-modal h2 {
+        font-size: 20px;
+    }
+
+    .thank-you-modal p {
+        font-size: 14px;
+    }
+}

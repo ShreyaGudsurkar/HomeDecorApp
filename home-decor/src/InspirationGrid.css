@@ -1,0 +1,49 @@
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.inspiration-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.inspiration-item:hover {
+    transform: scale(1.05);
+}
+
+.inspiration-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.inspiration-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.inspiration-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#1e2912;
+}
+
+.inspiration-info p {
+    font-size: 1rem;
+    color: #71724f;
+}
+
+.inspiration-grid p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #71724f;
+}

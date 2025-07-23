@@ -1,0 +1,170 @@
+.header {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "header-info"
+        "header-nav";
+    grid-template-rows: auto auto;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-info {
+    grid-area: header-info;
+    display: grid;
+    grid-template-areas: "header-logo header-title profile-picture";
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__logo {
+    grid-area: header-logo;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header__title {
+    grid-area: header-title;
+    text-align: center;
+    font-family: "Jim Nightshade", cursive;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.profile__dropdown-container {
+    grid-area: profile-picture;
+    position: relative;
+    display: inline-block;
+}
+
+.header__nav {
+    grid-area: header-nav;
+    margin-top: 10px;
+}
+
+.profile__picture {
+    width: 40px;
+    height: 40px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.profile__picture:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 8px 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.dropdown-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #2b3821;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.dropdown-item p {
+    font-family: Copperplate, cursive;
+    font-size: 1.2rem;
+}
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #0056b3;
+}
+
+.dropdown-item a {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+.dropdown-item button{
+    font-family: "Playfair Display", serif;
+    color: #2b3821;
+    border: none;
+    background-color:whitesmoke;
+    font-size: 1rem;
+    padding:0;
+    margin: 0;
+    text-align: left;
+}
+
+.dropdown-item a:hover {
+    color: #0056b3;
+}
+
+
+/* Animations for dropdown */
+.dropdown-menu {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive styles */
+@media (max-width: 48rem) {
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .profile__picture {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger-menu img {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+}

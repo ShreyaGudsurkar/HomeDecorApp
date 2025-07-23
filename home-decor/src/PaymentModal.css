@@ -1,0 +1,76 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.payment-cancel-modal, .payment-success-modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideIn 0.3s ease-out;
+}
+
+.payment-cancel-modal, .payment-success-modal h2 {
+    margin-bottom: 1.5rem;
+    color: #1e2912;
+}
+
+.payment-cancel-modal, .payment-success-modal p {
+    margin: 0.5rem 0;
+    color: #636301;
+}
+
+.payment-cancel-modal button {
+    margin-top: 1rem;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-cancel-modal button:hover {
+    background-color: #e13a29;
+}
+.payment-success-modal button {
+    margin-top: 1rem;
+    background-color: #0a5558;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-success-modal button:hover {
+    background-color: #055255;
+}
+
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

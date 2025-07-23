@@ -1,0 +1,167 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.profile-modal {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+    z-index: 1000;
+}
+
+.profile-modal h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-modal label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.profile-modal input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-picture-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.profile-picture-option {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    object-fit: cover;
+}
+
+.profile-picture-option img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-picture-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture-option.selected {
+    border: 2px solid #5E738D;
+    box-shadow: 0 6px 10px rgba(94, 115, 141, 0.6);
+}
+
+/* Modal actions */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.save-button,
+.cancel-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-button {
+    background-color: #8DA9C4;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #5E738D;
+    box-shadow: 0 6px 10px rgba(94, 115, 141, 0.6);
+}
+
+.cancel-button {
+    background-color: #E63946;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #A62F36;
+    box-shadow: 0 6px 10px rgba(166, 47, 54, 0.6);
+}
+
+/* Responsive styles */
+@media (max-width: 48rem) {
+    .profile-modal {
+        width: 250px;
+        height: 300px;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .profile-modal h2 {
+        font-size: 20px;
+    }
+
+    .profile-modal label {
+        font-size: 14px;
+    }
+
+    .profile-modal input[type="text"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profile-picture-options {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .profile-picture-option {
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .save-button,
+    .cancel-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
