@@ -80,13 +80,14 @@ Whether you're seeking design ideas or ready to furnish your space, Sabe Casa of
 ### Installation
 
 ```bash
-git clone https://github.com/shreya-gudsurkar/home-decor.git
+git clone https://github.com/ShreyaGudsurkar/HomeDecorApp.git
 cd home-decor
 npm install
+npm run dev
 ```
 
 ```bash
-cd ../homedecor-backend
+cd HomeDecorBackend
 ./gradlew bootRun
 ```
 
